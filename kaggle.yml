@@ -1,0 +1,10 @@
+id: catpigdog/my-awesome-kernel
+kernel_slug: catpigdog/my-awesome-kernel
+code_file: pytorch_1.ipynb
+language: python
+kernel_type: notebook
+accelerator: gpu
+internet: true
+privacy: public
+datasets: []
+competitions: []
