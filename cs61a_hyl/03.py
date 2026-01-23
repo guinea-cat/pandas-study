@@ -125,3 +125,18 @@ def smallest_factor(n):
     while n % k != 0:
         k = k + 1
     return k # 必为质数
+
+
+def prime_factors_list(n):
+    """返回一个包含所有质因数的列表"""
+
+    factors = [] 
+    
+    while n > 1:
+        k = smallest_factor(n)
+
+        factors.append(k) 
+        
+        n = n // k
+
+    return factors

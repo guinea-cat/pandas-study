@@ -1,5 +1,5 @@
 # Twenty-one
-
+# cs61a_1.ipynb
 def play(strategy0, strategy1, goal=21):
     """Play twenty-one and return the index of the winner.
 

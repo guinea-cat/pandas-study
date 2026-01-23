@@ -1,4 +1,4 @@
-# DRY
+# DRY原则（Don't Repeat Yourself）不要复制黏贴代码，要封装为函数
 
 def same_length(a, b):
     """Return whether positive integers a and b have the same number of digits.
@@ -45,12 +45,12 @@ def twice(f, x):
 
 def play(strategy0, strategy1, goal=21):
     """Play twenty-one and return the index of the winner.
-
+谁先达到或超过目标数字21 谁就赢
     >>> play(two_strat, two_strat)
     1
     """
     n = 0
-    who = 0  # Player 0 goes first
+    who = 0  # Player 0 goes first 2人 0,1
     while n < goal:
         if who == 0:
             n = n + strategy0(n)
@@ -58,7 +58,7 @@ def play(strategy0, strategy1, goal=21):
         elif who == 1:
             n = n + strategy1(n)
             who = 0
-    return who  # The player who didn't just add to n
+    return who  # The winner is the previous player
 
 def two_strat(n):
     return 2
@@ -72,13 +72,13 @@ def make_adder(n):
     >>> add_three(4)
     7
     """
-    def adder(k):
+    def adder(k): # 这个内部函数可以用外面传进来的 n
         return k + n
-    return adder
+    return adder # 返回定制的函数
 
-make_adder(2000)(24)
+make_adder(2000)(24) # 2024
 
-def noisy_strat(who, s):
+def noisy_strat(who, s): # s是策略函数
     """A strategy that prints its choices.
 
     >>> play(noisy_strat(0, two_strat), noisy_strat(1, two_strat))
