@@ -1,0 +1,50 @@
+# --- Python 相关 ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- 虚拟环境 (最建议忽略的，体积巨大) ---
+venv/
+.venv/
+pip-selfcheck.json
+
+# --- 你的 CS61A/CS224n 项目中常见的冗余文件 ---
+# 忽略你之前截图里出现的那些库文件
+*dist-info/
+ants_libs/
+
+# --- 数据科学常用 ---
+# 以后你打 Kaggle 或做大模型课题，数据文件通常很大，不建议传到 GitHub
+*.csv
+*.json
+*.parquet
+*.npy
+*.npz
+*.h5
+*.pth
+*.pkl
+
+# --- 编辑器与系统文件 ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
