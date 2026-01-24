@@ -67,12 +67,12 @@ main.py:程序的主执行文件或启动脚本,python的主入口文件
 
 
 
-\[cs61a](https://www.composingprograms.com/ "文字教程")
+[cs61a](https://www.composingprograms.com/ "文字教程")
 
 
-\[课程资源见](https://insideempire.github.io/CS61A-Website-Archive/)
+[CS61A 课程资源](https://insideempire.github.io/CS61A-Website-Archive/)
 
-\[NLP好难](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1246/)
+[NLP好难](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1246/)
 
 propmt：
 
